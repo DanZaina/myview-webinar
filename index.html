@@ -1,585 +1,1803 @@
 <!DOCTYPE html>
 
-<html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
-<head>
-<title></title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]-->
-<style>
-		* {
-			box-sizing: border-box;
-		}
+<html
+  lang="en"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+>
+  <head>
+    <title></title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+      * {
+        box-sizing: border-box;
+      }
 
-		body {
-			margin: 0;
-			padding: 0;
-		}
+      body {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+      }
 
-		a[x-apple-data-detectors] {
-			color: inherit !important;
-			text-decoration: inherit !important;
-		}
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
 
-		#MessageViewBody a {
-			color: inherit;
-			text-decoration: none;
-		}
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+      }
 
-		p {
-			line-height: inherit
-		}
+      p {
+        line-height: inherit;
+      }
 
-		.desktop_hide,
-		.desktop_hide table {
-			mso-hide: all;
-			display: none;
-			max-height: 0px;
-			overflow: hidden;
-		}
+      .desktop_hide,
+      .desktop_hide table {
+        mso-hide: all;
+        display: none;
+        max-height: 0px;
+        overflow: hidden;
+      }
 
-		.image_block img+div {
-			display: none;
-		}
+      .image_block img + div {
+        display: none;
+      }
 
-		@media (max-width:710px) {
+      @media (max-width: 710px) {
+        .desktop_hide table.icons-inner,
+        .row-5 .column-1 .block-5.social_block .alignment table,
+        .row-7 .column-2 .block-5.social_block .alignment table,
+        .social_block.desktop_hide .social-table {
+          display: inline-block !important;
+        }
 
-			.desktop_hide table.icons-inner,
-			.row-5 .column-1 .block-5.social_block .alignment table,
-			.row-7 .column-2 .block-5.social_block .alignment table,
-			.social_block.desktop_hide .social-table {
-				display: inline-block !important;
-			}
+        .icons-inner {
+          text-align: center;
+        }
 
-			.icons-inner {
-				text-align: center;
-			}
+        .icons-inner td {
+          margin: 0 auto;
+        }
 
-			.icons-inner td {
-				margin: 0 auto;
-			}
+        .mobile_hide {
+          display: none;
+        }
 
-			.mobile_hide {
-				display: none;
-			}
+        .row-content {
+          width: 100% !important;
+        }
 
-			.row-content {
-				width: 100% !important;
-			}
+        .stack .column {
+          width: 100%;
+          display: block;
+        }
 
-			.stack .column {
-				width: 100%;
-				display: block;
-			}
+        .mobile_hide {
+          min-height: 0;
+          max-height: 0;
+          max-width: 0;
+          overflow: hidden;
+          font-size: 0px;
+        }
 
-			.mobile_hide {
-				min-height: 0;
-				max-height: 0;
-				max-width: 0;
-				overflow: hidden;
-				font-size: 0px;
-			}
+        .desktop_hide,
+        .desktop_hide table {
+          display: table !important;
+          max-height: none !important;
+        }
 
-			.desktop_hide,
-			.desktop_hide table {
-				display: table !important;
-				max-height: none !important;
-			}
+        .reverse {
+          display: table;
+          width: 100%;
+        }
 
-			.reverse {
-				display: table;
-				width: 100%;
-			}
+        .reverse .column.first {
+          display: table-footer-group !important;
+        }
 
-			.reverse .column.first {
-				display: table-footer-group !important;
-			}
+        .reverse .column.last {
+          display: table-header-group !important;
+        }
 
-			.reverse .column.last {
-				display: table-header-group !important;
-			}
+        .row-7 td.column.first .border {
+          padding: 15px 0;
+          border-top: 0;
+          border-right: 0px;
+          border-bottom: 0;
+          border-left: 0;
+        }
 
-			.row-7 td.column.first .border {
-				padding: 15px 0;
-				border-top: 0;
-				border-right: 0px;
-				border-bottom: 0;
-				border-left: 0;
-			}
+        .row-7 td.column.last .border {
+          padding: 5px 0;
+          border-top: 0;
+          border-right: 0px;
+          border-bottom: 0;
+          border-left: 0;
+        }
 
-			.row-7 td.column.last .border {
-				padding: 5px 0;
-				border-top: 0;
-				border-right: 0px;
-				border-bottom: 0;
-				border-left: 0;
-			}
+        .row-1 .column-1 .block-1.image_block td.pad {
+          padding: 15px 0 10px !important;
+        }
 
-			.row-1 .column-1 .block-1.image_block td.pad {
-				padding: 15px 0 10px !important;
-			}
+        .row-3 .column-1 .block-3.heading_block td.pad {
+          padding: 10px 0 !important;
+        }
 
-			.row-3 .column-1 .block-3.heading_block td.pad {
-				padding: 10px 0 !important;
-			}
+        .row-5 .column-1 .block-2.heading_block h3,
+        .row-5 .column-1 .block-3.heading_block h3,
+        .row-5 .column-1 .block-4.paragraph_block td.pad > div,
+        .row-5 .column-1 .block-5.social_block .alignment,
+        .row-7 .column-2 .block-2.heading_block h3,
+        .row-7 .column-2 .block-3.heading_block h3,
+        .row-7 .column-2 .block-4.paragraph_block td.pad > div,
+        .row-7 .column-2 .block-5.social_block .alignment {
+          text-align: center !important;
+        }
 
-			.row-5 .column-1 .block-2.heading_block h3,
-			.row-5 .column-1 .block-3.heading_block h3,
-			.row-5 .column-1 .block-4.paragraph_block td.pad>div,
-			.row-5 .column-1 .block-5.social_block .alignment,
-			.row-7 .column-2 .block-2.heading_block h3,
-			.row-7 .column-2 .block-3.heading_block h3,
-			.row-7 .column-2 .block-4.paragraph_block td.pad>div,
-			.row-7 .column-2 .block-5.social_block .alignment {
-				text-align: center !important;
-			}
+        .row-5 .column-1 .block-5.social_block td.pad,
+        .row-7 .column-2 .block-5.social_block td.pad {
+          padding: 5px 10px !important;
+        }
 
-			.row-5 .column-1 .block-5.social_block td.pad,
-			.row-7 .column-2 .block-5.social_block td.pad {
-				padding: 5px 10px !important;
-			}
-
-			.row-1 .column-1 {
-				padding: 20px 15px 60px !important;
-			}
-		}
-	</style>
-</head>
-<body style="background-color: #f9fafb; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
-<table border="0" cellpadding="0" cellspacing="0" class="nl-container" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f9fafb; background-repeat: no-repeat; background-size: auto; background-image: none; background-position: top left;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-repeat: no-repeat; background-size: auto; background-color: #fff; background-image: url('images/calm-nature.jpg'); color: #000; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr>
-<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; padding-top: 20px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
-<table border="0" cellpadding="0" cellspacing="0" class="image_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="padding-bottom:10px;width:100%;padding-right:0px;padding-left:0px;">
-<div align="center" class="alignment" style="line-height:10px"><img alt="I'm an image" src="images/logo.png" style="display: block; height: auto; border: 0; max-width: 206.5px; width: 100%;" title="I'm an image" width="206.5"/></div>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="10" cellspacing="0" class="heading_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad">
-<h1 style="margin: 0; color: #12abe3; direction: ltr; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 30px; font-weight: 400; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">Want to sleep better and feel less stressed?</span></h1>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="10" cellspacing="0" class="text_block block-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;" width="100%">
-<tr>
-<td class="pad">
-<div style="font-family: sans-serif">
-<div class="" style="font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; mso-line-height-alt: 18px; color: #ffffff; line-height: 1.5;">
-<p style="margin: 0; text-align: center; mso-line-height-alt: 33px;"><span style="font-size:22px;color:#eb533a;">Join us for this month’s webinar and we’ll tell you how.</span></p>
-</div>
-</div>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="10" cellspacing="0" class="button_block block-4" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad">
-<div align="center" class="alignment"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://us06web.zoom.us/webinar/register/WN_uhQ0s1jdSlC3RmPyUwKV-g#/registration" style="height:46px;width:185px;v-text-anchor:middle;" arcsize="9%" stroke="false" fillcolor="#12abe3"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Arial, sans-serif; font-size:18px"><![endif]--><a href="https://us06web.zoom.us/webinar/register/WN_uhQ0s1jdSlC3RmPyUwKV-g#/registration" style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#12abe3;border-radius:4px;width:auto;border-top:0px solid #12abe3;font-weight:400;border-right:0px solid #12abe3;border-bottom:0px solid #12abe3;border-left:0px solid #12abe3;padding-top:5px;padding-bottom:5px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:18px;text-align:center;mso-border-alt:none;word-break:keep-all;" target="_blank"><span style="padding-left:20px;padding-right:20px;font-size:18px;display:inline-block;letter-spacing:1px;"><span style="word-break: break-word; line-height: 36px;">Register Today! </span></span></a><!--[if mso]></center></v:textbox></v:roundrect><![endif]--></div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; border-radius: 0; color: #000; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr>
-<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
-<div class="spacer_block block-1" style="height:30px;line-height:30px;font-size:1px;"> </div>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; border-radius: 0; color: #000; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr>
-<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; padding-top: 40px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
-<table border="0" cellpadding="0" cellspacing="0" class="image_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="padding-bottom:10px;width:100%;">
-<div align="center" class="alignment" style="line-height:10px"><img src="images/heart.png" style="display: block; height: auto; border: 0; max-width: 47px; width: 100%;" width="47"/></div>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="10" cellspacing="0" class="text_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;" width="100%">
-<tr>
-<td class="pad">
-<div style="font-family: sans-serif">
-<div class="" style="font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; mso-line-height-alt: 18px; color: #12abe3; line-height: 1.5;">
-<p style="margin: 0; text-align: center; mso-line-height-alt: 33px;"><span style="font-size:22px;color:#12abe3;"><span style="">Learn and discover</span> how stress impacts your <span style="font-size:24px;">health.</span></span></p>
-</div>
-</div>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="10" cellspacing="0" class="heading_block block-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad">
-<h3 style="margin: 0; color: #6b7280; direction: ltr; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; letter-spacing: normal; line-height: 150%; text-align: center; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">Our guest speakers guide you through how stress significantly affects our health, prompting us to explore ways to reduce it, improve our sleep, and establish healthy routines for a better well-being. </span></h3>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-4" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; border-radius: 0; color: #000; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr>
-<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
-<div class="spacer_block block-1" style="height:30px;line-height:30px;font-size:1px;"> </div>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-5" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-position: center top;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f5f5; color: #000; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr>
-<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 30px; padding-left: 10px; padding-right: 10px; padding-top: 30px; vertical-align: middle; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="50%">
-<div class="spacer_block block-1 mobile_hide" style="height:45px;line-height:45px;font-size:1px;"> </div>
-<table border="0" cellpadding="0" cellspacing="0" class="heading_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="padding-bottom:5px;padding-left:10px;padding-right:10px;padding-top:5px;text-align:center;width:100%;">
-<h3 style="margin: 0; color: #12abe3; direction: ltr; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">Leslie Van Zelst-Lempp</span></h3>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="0" cellspacing="0" class="heading_block block-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="padding-bottom:5px;padding-left:10px;padding-right:10px;padding-top:5px;text-align:center;width:100%;">
-<h3 style="margin: 0; color: #eb533a; direction: ltr; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 23px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">R. Kin, ACESM-CEP</span></h3>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="0" cellspacing="0" class="paragraph_block block-4" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;" width="100%">
-<tr>
-<td class="pad" style="padding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:10px;">
-<div style="color:#393d47;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:18px;line-height:180%;text-align:left;mso-line-height-alt:32.4px;">
-<p style="margin: 0; word-break: break-word;">Program Lead - MyVIEW Cardiac Wellness Program.</p>
-</div>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="10" cellspacing="0" class="social_block block-5" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad">
-<div align="left" class="alignment">
-<table border="0" cellpadding="0" cellspacing="0" class="social-table" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block;" width="72px">
-<tr>
-<td style="padding:0 4px 0 0;"><a href="mailto:wellness@my-view.com" target="_blank"><img alt="email" height="32" src="images/telegram2x.png" style="display: block; height: auto; border: 0;" title="email" width="32"/></a></td>
-<td style="padding:0 4px 0 0;"><a href="https://my-view.ca/" target="_blank"><img alt="Web Site" height="32" src="images/website2x.png" style="display: block; height: auto; border: 0;" title="Web Site" width="32"/></a></td>
-</tr>
-</table>
-</div>
-</td>
-</tr>
-</table>
-</td>
-<td class="column column-2" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: middle; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="50%">
-<table border="0" cellpadding="0" cellspacing="0" class="image_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
-<div align="center" class="alignment" style="line-height:10px"><img alt="Peace For Ukraine" src="images/leslie_van_zelst-test.png" style="display: block; height: auto; border: 0; max-width: 259px; width: 100%;" title="Peace For Ukraine" width="259"/></div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-6" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto; background-color: #f5f5f5; color: #000; border-radius: 0; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr>
-<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 10px; padding-top: 10px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
-<div class="spacer_block block-1 mobile_hide" style="height:25px;line-height:25px;font-size:1px;"> </div>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-7" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-position: center top;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f5f5; color: #000; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr class="reverse">
-<td class="column column-1 first" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 15px; padding-top: 15px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="50%">
-<div class="border">
-<table border="0" cellpadding="0" cellspacing="0" class="image_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
-<div align="center" class="alignment" style="line-height:10px"><img alt="Peace Sign" src="images/leslie_van_zelst-test-2.png" style="display: block; height: auto; border: 0; max-width: 276px; width: 100%;" title="Peace Sign" width="276"/></div>
-</td>
-</tr>
-</table>
-<div class="spacer_block block-2" style="height:30px;line-height:30px;font-size:1px;"> </div>
-</div>
-</td>
-<td class="column column-2 last" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="50%">
-<div class="border">
-<div class="spacer_block block-1 mobile_hide" style="height:45px;line-height:45px;font-size:1px;"> </div>
-<table border="0" cellpadding="0" cellspacing="0" class="heading_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="padding-bottom:5px;padding-left:10px;padding-right:10px;padding-top:5px;text-align:center;width:100%;">
-<h3 style="margin: 0; color: #12abe3; direction: ltr; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">Lais Vanzella</span></h3>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="0" cellspacing="0" class="heading_block block-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="padding-bottom:5px;padding-left:10px;padding-right:10px;padding-top:5px;text-align:center;width:100%;">
-<h3 style="margin: 0; color: #eb533a; direction: ltr; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 23px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">PhD</span></h3>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="0" cellspacing="0" class="paragraph_block block-4" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;" width="100%">
-<tr>
-<td class="pad" style="padding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:10px;">
-<div style="color:#393d47;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:18px;line-height:180%;text-align:left;mso-line-height-alt:32.4px;">
-<p style="margin: 0; word-break: break-word;">Myant Clinical Scientist </p>
-</div>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="10" cellspacing="0" class="social_block block-5" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad">
-<div align="left" class="alignment">
-<table border="0" cellpadding="0" cellspacing="0" class="social-table" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block;" width="72px">
-<tr>
-<td style="padding:0 4px 0 0;"><a href="mailto:wellness@my-view.com" target="_blank"><img alt="email" height="32" src="images/telegram2x.png" style="display: block; height: auto; border: 0;" title="email" width="32"/></a></td>
-<td style="padding:0 4px 0 0;"><a href="" target="_blank"><img alt="Web Site" height="32" src="images/website2x.png" style="display: block; height: auto; border: 0;" title="Web Site" width="32"/></a></td>
-</tr>
-</table>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-8" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-repeat: no-repeat; background-size: auto; background-color: #fff; background-image: url('images/test.jpg'); border-radius: 0; color: #000; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr>
-<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 50px; padding-top: 50px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
-<table border="0" cellpadding="0" cellspacing="0" class="image_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="padding-bottom:10px;width:100%;">
-<div align="center" class="alignment" style="line-height:10px"><img src="images/date-time.png" style="display: block; height: auto; border: 0; max-width: 47px; width: 100%;" width="47"/></div>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="10" cellspacing="0" class="text_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;" width="100%">
-<tr>
-<td class="pad">
-<div style="font-family: sans-serif">
-<div class="" style="font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; mso-line-height-alt: 18px; color: #ffffff; line-height: 1.5;">
-<p style="margin: 0; text-align: center; mso-line-height-alt: 36px;"><span style="font-size:24px;">Join us on Tuesday, October 10th 12:00pm EST.</span></p>
-</div>
-</div>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="10" cellspacing="0" class="button_block block-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad">
-<div align="center" class="alignment"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://us06web.zoom.us/webinar/register/WN_uhQ0s1jdSlC3RmPyUwKV-g#/registration" style="height:46px;width:182px;v-text-anchor:middle;" arcsize="9%" stroke="false" fillcolor="#0068a5"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Arial, sans-serif; font-size:18px"><![endif]--><a href="https://us06web.zoom.us/webinar/register/WN_uhQ0s1jdSlC3RmPyUwKV-g#/registration" style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#0068a5;border-radius:4px;width:auto;border-top:0px solid #12abe3;font-weight:400;border-right:0px solid #12abe3;border-bottom:0px solid #12abe3;border-left:0px solid #12abe3;padding-top:5px;padding-bottom:5px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:18px;text-align:center;mso-border-alt:none;word-break:keep-all;" target="_blank"><span style="padding-left:20px;padding-right:20px;font-size:18px;display:inline-block;letter-spacing:1px;"><span style="word-break: break-word; line-height: 36px;">Save Your Seat!</span></span></a><!--[if mso]></center></v:textbox></v:roundrect><![endif]--></div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-9" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; color: #000; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr>
-<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 10px; padding-top: 10px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
-<div class="spacer_block block-1 mobile_hide" style="height:30px;line-height:30px;font-size:1px;"> </div>
-<div class="spacer_block block-2 desktop_hide" style="mso-hide: all; display: none; max-height: 0; overflow: hidden; height: 40px; line-height: 40px; font-size: 1px;"> </div>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-10" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; border-radius: 0; color: #000; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr>
-<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
-<table border="0" cellpadding="0" cellspacing="0" class="image_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
-<div align="center" class="alignment" style="line-height:10px"><img src="images/logo.png" style="display: block; height: auto; border: 0; max-width: 241.49999999999997px; width: 100%;" width="241.49999999999997"/></div>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="0" cellspacing="0" class="heading_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="padding-bottom:25px;padding-left:10px;padding-right:10px;padding-top:10px;text-align:center;width:100%;">
-<h3 style="margin: 0; color: #6b7280; direction: ltr; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 400; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0;">Visit <a data-cke-saved-href="https://my-view.ca/" href="https://my-view.ca/" rel="noopener" style="text-decoration: underline; color: #12abe3;" target="_blank">www.my-view.ca</a> scan or click the code below to follow us and stay informed about new programs, upcoming courses, services and more!</h3>
-</td>
-</tr>
-</table>
-<table border="0" cellpadding="10" cellspacing="0" class="social_block block-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad">
-<div align="center" class="alignment">
-<table border="0" cellpadding="0" cellspacing="0" class="social-table" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block;" width="168px">
-<tr>
-<td style="padding:0 5px 0 5px;"><a href="https://www.facebook.com/MyVIEWCardiacWellness/" target="_blank"><img alt="Facebook" height="32" src="images/facebook2x.png" style="display: block; height: auto; border: 0;" title="facebook" width="32"/></a></td>
-<td style="padding:0 5px 0 5px;"><a href="https://www.instagram.com/myviewcardiacwellness/" target="_blank"><img alt="Instagram" height="32" src="images/instagram2x.png" style="display: block; height: auto; border: 0;" title="instagram" width="32"/></a></td>
-<td style="padding:0 5px 0 5px;"><a href="https://twitter.com/MyVIEWWellness" target="_blank"><img alt="Twitter" height="32" src="images/twitter2x.png" style="display: block; height: auto; border: 0;" title="twitter" width="32"/></a></td>
-<td style="padding:0 5px 0 5px;"><a href="https://www.linkedin.com/company/myview-cardiac-wellness/about/" target="_blank"><img alt="Linkedin" height="32" src="images/linkedin2x.png" style="display: block; height: auto; border: 0;" title="linkedin" width="32"/></a></td>
-</tr>
-</table>
-</div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-11" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; color: #000; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr>
-<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 10px; padding-top: 10px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
-<div class="spacer_block block-1" style="height:45px;line-height:45px;font-size:1px;"> </div>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-12" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;" width="100%">
-<tbody>
-<tr>
-<td>
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; color: #000; width: 690px; margin: 0 auto;" width="690">
-<tbody>
-<tr>
-<td class="column column-1" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;" width="100%">
-<table border="0" cellpadding="0" cellspacing="0" class="icons_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="pad" style="vertical-align: middle; color: #1e0e4b; font-family: 'Inter', sans-serif; font-size: 15px; padding-bottom: 5px; padding-top: 5px; text-align: center;">
-<table cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
-<tr>
-<td class="alignment" style="vertical-align: middle; text-align: center;"><!--[if vml]><table align="left" cellpadding="0" cellspacing="0" role="presentation" style="display:inline-block;padding-left:0px;padding-right:0px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><![endif]-->
-<!--[if !vml]><!-->
-<table cellpadding="0" cellspacing="0" class="icons-inner" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block; margin-right: -4px; padding-left: 0px; padding-right: 0px;"><!--<![endif]-->
-<tr>
-<td style="vertical-align: middle; text-align: center; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 6px;"><a href="http://designedwithbeefree.com/" style="text-decoration: none;" target="_blank"><img align="center" alt="Beefree Logo" class="icon" height="32" src="images/Beefree-logo.png" style="display: block; height: auto; margin: 0 auto; border: 0;" width="34"/></a></td>
-<td style="font-family: 'Inter', sans-serif; font-size: 15px; color: #1e0e4b; vertical-align: middle; letter-spacing: undefined; text-align: center;"><a href="http://designedwithbeefree.com/" style="color: #1e0e4b; text-decoration: none;" target="_blank">Designed with Beefree</a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table><!-- End -->
-</body>
+        .row-1 .column-1 {
+          padding: 20px 15px 60px !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+    "
+  >
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      class="nl-container"
+      role="presentation"
+      style="
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        background-color: #f9fafb;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-image: none;
+        background-position: top left;
+      "
+      width="100%"
+    >
+      <tbody>
+        <tr>
+          <td>
+            <!-- Header Row -->
+            <table
+              align="center"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="row row-1"
+              role="presentation"
+              style="
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+                background-size: auto;
+              "
+              width="100%"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="row-content stack"
+                      role="presentation"
+                      style="
+                        mso-table-lspace: 0pt;
+                        mso-table-rspace: 0pt;
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        background-color: #fff;
+                        background-image: url('images/calm-nature.jpg');
+                        color: #000;
+                        width: 690px;
+                        margin: 0 auto;
+                      "
+                      width="690"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            class="column column-1"
+                            style="
+                              mso-table-lspace: 0pt;
+                              mso-table-rspace: 0pt;
+                              font-weight: 400;
+                              text-align: left;
+                              padding-bottom: 60px;
+                              padding-left: 50px;
+                              padding-right: 50px;
+                              padding-top: 20px;
+                              vertical-align: top;
+                              border-top: 0px;
+                              border-right: 0px;
+                              border-bottom: 0px;
+                              border-left: 0px;
+                            "
+                            width="100%"
+                          >
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="image_block block-1"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                              "
+                              width="100%"
+                            >
+                              <tr>
+                                <td
+                                  class="pad"
+                                  style="
+                                    padding-bottom: 10px;
+                                    width: 100%;
+                                    padding-right: 0px;
+                                    padding-left: 0px;
+                                  "
+                                >
+                                  <div
+                                    align="center"
+                                    class="alignment"
+                                    style="line-height: 10px"
+                                  >
+                                    <img
+                                      alt="I'm an image"
+                                      src="images/logo.png"
+                                      style="
+                                        display: block;
+                                        height: auto;
+                                        border: 0;
+                                        max-width: 206.5px;
+                                        width: 100%;
+                                      "
+                                      title="I'm an image"
+                                      width="206.5"
+                                    />
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              border="0"
+                              cellpadding="10"
+                              cellspacing="0"
+                              class="heading_block block-2"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                              "
+                              width="100%"
+                            >
+                              <tr>
+                                <td class="pad">
+                                  <h1
+                                    style="
+                                    margin: 0;
+                                      text-align: center;
+                                      color: #12abe3;
+                                      font-family: 'Poppins', sans-serif;
+                                      font-size: 30px;
+                                      font-weight: 400;
+                                      letter-spacing: 0.4px;
+                                      line-height: 40px;
+                                      word-break: break-word;
+                                    "
+                                  >
+                                    <span class="tinyMce-placeholder"
+                                      >Want to sleep better and feel less
+                                      stressed?</span
+                                    >
+                                  </h1>
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              border="0"
+                              cellpadding="10"
+                              cellspacing="0"
+                              class="text_block block-3"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                                word-break: break-word;
+                              "
+                              width="100%"
+                            ></table>
+                            <table
+                              border="0"
+                              cellpadding="10"
+                              cellspacing="0"
+                              class="button_block block-4"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                              "
+                              width="100%"
+                            >
+                              <tr>
+                                <td class="pad">
+                                  <div align="center" class="alignment">
+                                    <a
+                                      href="https://us06web.zoom.us/webinar/register/WN_uhQ0s1jdSlC3RmPyUwKV-g#/registration"
+                                      style="
+                                        text-decoration: none;
+                                        display: inline-block;
+                                        color: #ffffff;
+                                        background-color: #12abe3;
+                                        border-radius: 4px;
+                                        width: auto;
+                                        border-top: 0px solid #12abe3;
+                                        font-weight: 400;
+                                        border-right: 0px solid #12abe3;
+                                        border-bottom: 0px solid #12abe3;
+                                        border-left: 0px solid #12abe3;
+                                        padding-top: 5px;
+                                        padding-bottom: 5px;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 18px;
+                                        text-align: center;
+                                        mso-border-alt: none;
+                                        word-break: keep-all;
+                                      "
+                                      target="_blank"
+                                      ><span
+                                        style="
+                                          padding-left: 20px;
+                                          padding-right: 20px;
+                                          font-size: 18px;
+                                          display: inline-block;
+                                          letter-spacing: 1px;
+                                        "
+                                        ><span
+                                          style="
+                                            word-break: break-word;
+                                            line-height: 36px;
+                                          "
+                                          >Register Today!</span
+                                        ></span
+                                      ></a
+                                    >
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Learn & Discover Row -->
+            <table
+              align="center"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="row row-3"
+              role="presentation"
+              style="mso-table-lspace: 0pt; mso-table-rspace: 0pt"
+              width="100%"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="row-content stack"
+                      role="presentation"
+                      style="
+                        mso-table-lspace: 0pt;
+                        mso-table-rspace: 0pt;
+                        background-color: #fff;
+                        border-radius: 0;
+                        color: #000;
+                        width: 690px;
+                        margin: 0 auto;
+                      "
+                      width="690"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            class="column column-1"
+                            style="
+                              mso-table-lspace: 0pt;
+                              mso-table-rspace: 0pt;
+                              font-weight: 400;
+                              text-align: left;
+                              padding-bottom: 40px;
+                              padding-left: 20px;
+                              padding-right: 20px;
+                              padding-top: 40px;
+                              vertical-align: top;
+                              border-top: 0px;
+                              border-right: 0px;
+                              border-bottom: 0px;
+                              border-left: 0px;
+                            "
+                            width="100%"
+                          >
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="image_block block-1"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                              "
+                              width="100%"
+                            >
+                              <tr>
+                                <td
+                                  class="pad"
+                                  style="padding-bottom: 10px; width: 100%"
+                                >
+                                  <div
+                                    align="center"
+                                    class="alignment"
+                                    style="line-height: 10px"
+                                  >
+                                    <img
+                                      src="images/heart.png"
+                                      style="
+                                        display: block;
+                                        height: auto;
+                                        border: 0;
+                                        max-width: 47px;
+                                        width: 100%;
+                                      "
+                                      width="47"
+                                    />
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              border="0"
+                              cellpadding="10"
+                              cellspacing="0"
+                              class="text_block block-2"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                                word-break: break-word;
+                              "
+                              width="100%"
+                            >
+                              <tr>
+                                <td class="pad">
+                                  <div style="font-family: sans-serif">
+                                    <div
+                                      class=""
+                                      style="
+                                        text-align: center;
+                                        color: #eb533a;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 20px;
+                                        letter-spacing: 0.4px;
+                                        line-height: 23px;
+                                        word-break: break-word;
+                                        font-weight: 300;
+                                        padding-left: 1.5px;
+                                      "
+                                    >
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          text-align: center;
+                                          mso-line-height-alt: 33px;
+                                        "
+                                      >
+                                        Join us for this month's webinar and
+                                        we'll tell you how.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              border="0"
+                              cellpadding="10"
+                              cellspacing="0"
+                              class="heading_block block-3"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                              "
+                              width="100%"
+                            >
+                              <tr>
+                                <td class="pad">
+                                  <h3
+                                    style="
+                                      text-align: center;
+                                      color: #6b7280;
+                                      font-family: 'Poppins', sans-serif;
+                                      font-size: 16px;
+                                      letter-spacing: 0.4px;
+                                      line-height: 28px;
+                                      word-break: break-word;
+                                      font-weight: 300;
+                                      padding-left: 3px;
+                                    "
+                                  >
+                                    <span class="tinyMce-placeholder"
+                                      >Our guest speakers guide you through how
+                                      stress significantly affects our health,
+                                      prompting us to explore ways to reduce it,
+                                      improve our sleep, and establish healthy
+                                      routines for a better well-being. </span
+                                    >
+                                  </h3>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Leslie Row -->
+            <table
+              align="center"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="row row-5"
+              role="presentation"
+              style="
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+                background-position: center top;
+              "
+              width="100%"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="row-content stack"
+                      role="presentation"
+                      style="
+                        mso-table-lspace: 0pt;
+                        mso-table-rspace: 0pt;
+                        background-color: #ffffff;
+                        color: #000;
+                        width: 690px;
+                        margin: 0 auto;
+                      "
+                      width="690"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            class="column column-1"
+                            style="
+                              mso-table-lspace: 0pt;
+                              mso-table-rspace: 0pt;
+                              font-weight: 400;
+                              text-align: left;
+                              padding-bottom: 30px;
+                              padding-left: 35px;
+                              padding-right: 10px;
+                              padding-top: 30px;
+                              vertical-align: middle;
+                              border-top: 0px;
+                              border-right: 0px;
+                              border-bottom: 0px;
+                              border-left: 0px;
+                            "
+                            width="50%"
+                          >
+                            <div
+                              class="spacer_block block-1 mobile_hide"
+                              style="
+                                height: 45px;
+                                line-height: 45px;
+                                font-size: 1px;
+                              "
+                            >
+                              &hairsp;
+                            </div>
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="heading_block block-2"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                              "
+                              width="100%"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="pad"
+                                    style="
+                                      padding-bottom: 5px;
+                                      padding-left: 10px;
+                                      padding-right: 10px;
+                                      padding-top: 5px;
+                                      text-align: center;
+                                      width: 100%;
+                                    "
+                                  >
+                                    <h3
+                                      style="
+                                        margin: 0;
+                                        color: #12abe3;
+                                        direction: ltr;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 24px;
+                                        font-weight: 700;
+                                        letter-spacing: normal;
+                                        line-height: 120%;
+                                        text-align: left;
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                      "
+                                    >
+                                      <span class="tinyMce-placeholder"
+                                        >Leslie Van Zelst-Lempp</span
+                                      >
+                                    </h3>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="heading_block block-3"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                              "
+                              width="100%"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="pad"
+                                    style="
+                                      padding-bottom: 5px;
+                                      padding-left: 10px;
+                                      padding-right: 10px;
+                                      padding-top: 5px;
+                                      text-align: center;
+                                      width: 100%;
+                                    "
+                                  >
+                                    <h3
+                                      style="
+                                        margin: 0;
+                                        color: #eb533a;
+                                        direction: ltr;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 23px;
+                                        font-weight: 700;
+                                        letter-spacing: normal;
+                                        line-height: 120%;
+                                        text-align: left;
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                      "
+                                    >
+                                      <span class="tinyMce-placeholder"
+                                        >R. Kin, ACESM-CEP</span
+                                      >
+                                    </h3>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="paragraph_block block-4"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                                word-break: break-word;
+                              "
+                              width="100%"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="pad"
+                                    style="
+                                      padding-bottom: 20px;
+                                      padding-left: 10px;
+                                      padding-right: 10px;
+                                      padding-top: 10px;
+                                    "
+                                  >
+                                    <div
+                                      style="
+                                        color: #393d47;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 18px;
+                                        line-height: 180%;
+                                        text-align: left;
+                                        mso-line-height-alt: 32.4px;
+                                      "
+                                    >
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          word-break: break-word;
+                                        "
+                                      >
+                                        Program Lead - MyVIEW Cardiac Wellness
+                                        Program.
+                                      </p>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              border="0"
+                              cellpadding="10"
+                              cellspacing="0"
+                              class="social_block block-5"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                              "
+                              width="100%"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td class="pad">
+                                    <div align="left" class="alignment">
+                                      <table
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        class="social-table"
+                                        role="presentation"
+                                        style="
+                                          mso-table-lspace: 0pt;
+                                          mso-table-rspace: 0pt;
+                                          display: inline-block;
+                                        "
+                                        width="72px"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding: 0 4px 0 0">
+                                              <a
+                                                href="mailto:wellness@my-view.com"
+                                                target="_blank"
+                                                ><img
+                                                  alt="email"
+                                                  height="32"
+                                                  src="images/telegram2x.png"
+                                                  style="
+                                                    display: block;
+                                                    height: auto;
+                                                    border: 0;
+                                                  "
+                                                  title="email"
+                                                  width="32"
+                                              /></a>
+                                            </td>
+                                            <td style="padding: 0 4px 0 0">
+                                              <a
+                                                href="https://my-view.ca/"
+                                                target="_blank"
+                                                ><img
+                                                  alt="Web Site"
+                                                  height="32"
+                                                  src="images/website2x.png"
+                                                  style="
+                                                    display: block;
+                                                    height: auto;
+                                                    border: 0;
+                                                  "
+                                                  title="Web Site"
+                                                  width="32"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td
+                            class="column column-2"
+                            style="
+                              mso-table-lspace: 0pt;
+                              mso-table-rspace: 0pt;
+                              font-weight: 400;
+                              text-align: left;
+                              padding-bottom: 5px;
+                              padding-top: 5px;
+                              vertical-align: middle;
+                              border-top: 0px;
+                              border-right: 0px;
+                              border-bottom: 0px;
+                              border-left: 0px;
+                            "
+                            width="50%"
+                          >
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="image_block block-1"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                              "
+                              width="100%"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="pad"
+                                    style="
+                                      width: 100%;
+                                      padding-right: 0px;
+                                      padding-left: 0px;
+                                    "
+                                  >
+                                    <div
+                                      align="center"
+                                      class="alignment"
+                                      style="line-height: 10px"
+                                    >
+                                      <img
+                                        alt="Peace For Ukraine"
+                                        src="images/leslie_van_zelst-test.png"
+                                        style="
+                                          display: block;
+                                          height: auto;
+                                          border: 0;
+                                          max-width: 259px;
+                                          width: 100%;
+                                        "
+                                        title="Peace For Ukraine"
+                                        width="259"
+                                      />
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Spacer Row -->
+            <table
+              align="center"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="row row-6"
+              role="presentation"
+              style="
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+                background-size: auto;
+              "
+              width="100%"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="row-content stack"
+                      role="presentation"
+                      style="
+                        mso-table-lspace: 0pt;
+                        mso-table-rspace: 0pt;
+                        background-size: auto;
+                        background-color: #ffffff;
+                        color: #000;
+                        border-radius: 0;
+                        width: 690px;
+                        margin: 0 auto;
+                      "
+                      width="690"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            class="column column-1"
+                            style="
+                              mso-table-lspace: 0pt;
+                              mso-table-rspace: 0pt;
+                              font-weight: 400;
+                              text-align: left;
+                              padding-bottom: 10px;
+                              padding-top: 10px;
+                              vertical-align: top;
+                              border-top: 0px;
+                              border-right: 0px;
+                              border-bottom: 0px;
+                              border-left: 0px;
+                            "
+                            width="100%"
+                          >
+                            <div
+                              class="spacer_block block-1 mobile_hide"
+                              style="
+                                height: 25px;
+                                line-height: 25px;
+                                font-size: 1px;
+                              "
+                            ></div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Lais Row -->
+            <table
+              align="center"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="row row-7"
+              role="presentation"
+              style="
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+                background-position: center top;
+              "
+              width="100%"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="row-content stack"
+                      role="presentation"
+                      style="
+                        mso-table-lspace: 0pt;
+                        mso-table-rspace: 0pt;
+                        background-color: #ffffff;
+                        color: #000;
+                        width: 690px;
+                        margin: 0 auto;
+                      "
+                      width="690"
+                    >
+                      <tbody>
+                        <tr class="reverse">
+                          <td
+                            class="column column-1 first"
+                            style="
+                              mso-table-lspace: 0pt;
+                              mso-table-rspace: 0pt;
+                              font-weight: 400;
+                              text-align: left;
+                              padding-bottom: 15px;
+                              padding-top: 15px;
+                              vertical-align: top;
+                              border-top: 0px;
+                              border-right: 0px;
+                              border-bottom: 0px;
+                              border-left: 0px;
+                            "
+                            width="50%"
+                          >
+                            <div class="border">
+                              <table
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="image_block block-1"
+                                role="presentation"
+                                style="
+                                  mso-table-lspace: 0pt;
+                                  mso-table-rspace: 0pt;
+                                "
+                                width="100%"
+                              >
+                                <tr>
+                                  <td
+                                    class="pad"
+                                    style="
+                                      width: 100%;
+                                      padding-right: 0px;
+                                      padding-left: 0px;
+                                    "
+                                  >
+                                    <div
+                                      align="center"
+                                      class="alignment"
+                                      style="line-height: 10px"
+                                    >
+                                      <img
+                                        alt="Peace Sign"
+                                        src="images/leslie_van_zelst-test-2.png"
+                                        style="
+                                          display: block;
+                                          height: auto;
+                                          border: 0;
+                                          max-width: 276px;
+                                          width: 100%;
+                                        "
+                                        title="Peace Sign"
+                                        width="276"
+                                      />
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                              <div
+                                class="spacer_block block-2"
+                                style="
+                                  height: 30px;
+                                  line-height: 30px;
+                                  font-size: 1px;
+                                "
+                              >
+                                 
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            class="column column-2 last"
+                            style="
+                              mso-table-lspace: 0pt;
+                              mso-table-rspace: 0pt;
+                              font-weight: 400;
+                              text-align: left;
+                              padding-bottom: 5px;
+                              padding-top: 5px;
+                              vertical-align: top;
+                              border-top: 0px;
+                              border-right: 0px;
+                              border-bottom: 0px;
+                              border-left: 0px;
+                            "
+                            width="50%"
+                          >
+                            <div class="border">
+                              <div
+                                class="spacer_block block-1 mobile_hide"
+                                style="
+                                  height: 45px;
+                                  line-height: 45px;
+                                  font-size: 1px;
+                                "
+                              >
+                                 
+                              </div>
+                              <table
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="heading_block block-2"
+                                role="presentation"
+                                style="
+                                  mso-table-lspace: 0pt;
+                                  mso-table-rspace: 0pt;
+                                "
+                                width="100%"
+                              >
+                                <tr>
+                                  <td
+                                    class="pad"
+                                    style="
+                                      padding-bottom: 5px;
+                                      padding-left: 10px;
+                                      padding-right: 10px;
+                                      padding-top: 5px;
+                                      text-align: center;
+                                      width: 100%;
+                                    "
+                                  >
+                                    <h3
+                                      style="
+                                        margin: 0;
+                                        color: #12abe3;
+                                        direction: ltr;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 24px;
+                                        font-weight: 700;
+                                        letter-spacing: normal;
+                                        line-height: 120%;
+                                        text-align: left;
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                      "
+                                    >
+                                      <span class="tinyMce-placeholder"
+                                        >Lais Vanzella</span
+                                      >
+                                    </h3>
+                                  </td>
+                                </tr>
+                              </table>
+                              <table
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="heading_block block-3"
+                                role="presentation"
+                                style="
+                                  mso-table-lspace: 0pt;
+                                  mso-table-rspace: 0pt;
+                                "
+                                width="100%"
+                              >
+                                <tr>
+                                  <td
+                                    class="pad"
+                                    style="
+                                      padding-bottom: 5px;
+                                      padding-left: 10px;
+                                      padding-right: 10px;
+                                      padding-top: 5px;
+                                      text-align: center;
+                                      width: 100%;
+                                    "
+                                  >
+                                    <h3
+                                      style="
+                                        margin: 0;
+                                        color: #eb533a;
+                                        direction: ltr;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 23px;
+                                        font-weight: 700;
+                                        letter-spacing: normal;
+                                        line-height: 120%;
+                                        text-align: left;
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                      "
+                                    >
+                                      <span class="tinyMce-placeholder"
+                                        >PhD</span
+                                      >
+                                    </h3>
+                                  </td>
+                                </tr>
+                              </table>
+                              <table
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="paragraph_block block-4"
+                                role="presentation"
+                                style="
+                                  mso-table-lspace: 0pt;
+                                  mso-table-rspace: 0pt;
+                                  word-break: break-word;
+                                "
+                                width="100%"
+                              >
+                                <tr>
+                                  <td
+                                    class="pad"
+                                    style="
+                                      padding-bottom: 20px;
+                                      padding-left: 10px;
+                                      padding-right: 10px;
+                                      padding-top: 10px;
+                                    "
+                                  >
+                                    <div
+                                      style="
+                                        color: #393d47;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 18px;
+                                        line-height: 180%;
+                                        text-align: left;
+                                        mso-line-height-alt: 32.4px;
+                                      "
+                                    >
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          word-break: break-word;
+                                        "
+                                      >
+                                        Myant Clinical Scientist 
+                                      </p>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                              <table
+                                border="0"
+                                cellpadding="10"
+                                cellspacing="0"
+                                class="social_block block-5"
+                                role="presentation"
+                                style="
+                                  mso-table-lspace: 0pt;
+                                  mso-table-rspace: 0pt;
+                                "
+                                width="100%"
+                              >
+                                <tr>
+                                  <td class="pad">
+                                    <div align="left" class="alignment">
+                                      <table
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        class="social-table"
+                                        role="presentation"
+                                        style="
+                                          mso-table-lspace: 0pt;
+                                          mso-table-rspace: 0pt;
+                                          display: inline-block;
+                                        "
+                                        width="72px"
+                                      >
+                                        <tr>
+                                          <td style="padding: 0 4px 0 0">
+                                            <a
+                                              href="mailto:wellness@my-view.com"
+                                              target="_blank"
+                                              ><img
+                                                alt="email"
+                                                height="32"
+                                                src="images/telegram2x.png"
+                                                style="
+                                                  display: block;
+                                                  height: auto;
+                                                  border: 0;
+                                                "
+                                                title="email"
+                                                width="32"
+                                            /></a>
+                                          </td>
+                                          <td style="padding: 0 4px 0 0">
+                                            <a href="" target="_blank"
+                                              ><img
+                                                alt="Web Site"
+                                                height="32"
+                                                src="images/website2x.png"
+                                                style="
+                                                  display: block;
+                                                  height: auto;
+                                                  border: 0;
+                                                "
+                                                title="Web Site"
+                                                width="32"
+                                            /></a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- CTA Row -->
+            <table
+              align="center"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="row row-8"
+              role="presentation"
+              style="
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+                background-size: auto;
+              "
+              width="100%"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <table
+                      align="center"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="row-content stack"
+                      role="presentation"
+                      style="
+                        mso-table-lspace: 0pt;
+                        mso-table-rspace: 0pt;
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        background-color: #fff;
+                        background-image: url('images/test.jpg');
+                        border-radius: 0;
+                        color: #000;
+                        width: 690px;
+                        margin: 0 auto;
+                      "
+                      width="690"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            class="column column-1"
+                            style="
+                              mso-table-lspace: 0pt;
+                              mso-table-rspace: 0pt;
+                              font-weight: 400;
+                              text-align: left;
+                              padding-bottom: 50px;
+                              padding-top: 50px;
+                              vertical-align: top;
+                              border-top: 0px;
+                              border-right: 0px;
+                              border-bottom: 0px;
+                              border-left: 0px;
+                            "
+                            width="100%"
+                          >
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="image_block block-1"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                              "
+                              width="100%"
+                            >
+                              <tr>
+                                <td
+                                  class="pad"
+                                  style="padding-bottom: 10px; width: 100%"
+                                >
+                                  <div
+                                    align="center"
+                                    class="alignment"
+                                    style="line-height: 10px"
+                                  >
+                                    <img
+                                      src="images/date-time.png"
+                                      style="
+                                        display: block;
+                                        height: auto;
+                                        border: 0;
+                                        max-width: 47px;
+                                        width: 100%;
+                                      "
+                                      width="47"
+                                    />
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              border="0"
+                              cellpadding="10"
+                              cellspacing="0"
+                              class="text_block block-2"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                                word-break: break-word;
+                              "
+                              width="100%"
+                            >
+                              <tr>
+                                <td class="pad">
+                                  <div style="font-family: sans-serif">
+                                    <div
+                                      class=""
+                                      style="
+                                      text-align: center;
+                                      color: white;
+                                      font-family: 'Poppins', sans-serif;
+                                      font-size: 24px;
+                                      letter-spacing: 0.4px;
+                                      line-height: 40px;
+                                      word-break: break-word;
+                                      font-weight: 300;
+                                      "
+                                    >
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          text-align: center;
+                                          mso-line-height-alt: 36px;
+                                        "
+                                      >
+                                        <span style="font-size: 24px"
+                                          >Join us on Tuesday, October 10th
+                                          12:00pm EST.</span
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              border="0"
+                              cellpadding="10"
+                              cellspacing="0"
+                              class="button_block block-3"
+                              role="presentation"
+                              style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                              "
+                              width="100%"
+                            >
+                              <tr>
+                                <td class="pad">
+                                  <div align="center" class="alignment"><a
+                                      href="https://us06web.zoom.us/webinar/register/WN_uhQ0s1jdSlC3RmPyUwKV-g#/registration"
+                                      style="
+                                        text-decoration: none;
+                                        display: inline-block;
+                                        color: #ffffff;
+                                        background-color: #0068a5;
+                                        border-radius: 4px;
+                                        width: auto;  
+                                        font-weight: 400;
+                                        padding: 15px 23px;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 18px;
+                                        text-align: center;
+                                        word-break: keep-all;
+                                      "
+                                      target="_blank"
+                                      ><span
+                                        style="
+                                        color: white;
+                                        letter-spacing: 0.9px;
+                                        font-size: 18px;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-weight: 300;
+                                        text-decoration: none;
+                                        text-align: center;
+                                        line-height: 24px;
+                                        text-transform: uppercase;
+                                        word-break: break-word;
+                                        font-weight: 500;
+                                        "
+                                        ><span
+                                          style="
+                                            word-break: break-word;
+                                            line-height: 36px;
+                                          "
+                                          >Save Your Seat!</span
+                                        ></span
+                                      ></a
+                                    >
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- QR Code -->
+            <table 
+            align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="full">
+              <tbody>
+                <tr>
+                  <td>
+                  <table align="center" bgcolor="white" border="0" cellpadding="0" cellspacing="0" class="margin-full" width="690">
+                    <tbody>
+                      <tr>
+                        <td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="margin-pad" width="600">
+                          <tbody>
+                            <tr>
+                              <td height="75" style="font-size: 0px"> </td>
+                            </tr>
+                            <!-- title -->
+                            <tr>
+                              <td class="res-center" style="
+                                    color: white;
+                                  "><img src="https://myview-wellness-program.netlify.app/img/logo.png" style="display: block; margin: auto" width="250" /></td>
+                            </tr>
+                            <!-- title end -->
+                            <tr>
+                              <td height="30" style="font-size: 0px"> </td>
+                            </tr>
+                            <!-- paragraph -->
+                            <tr>
+                              <td class="res-center" style="
+                                    text-align: center;
+                                    color: #6b7280;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 16px;
+                                    letter-spacing: 0.4px;
+                                    line-height: 23px;
+                                    word-break: break-word;
+                                  ">Visit <a href="https://my-view.ca/" style="color: #12abe3" target="_blank">www.my-view.ca</a> scan or click the code below to follow us and stay informed about new programs, upcoming courses, services and more!</td>
+                            </tr>
+                            <!-- paragraph end -->
+                            <tr>
+                              <td height="30" style="font-size: 0px"> </td>
+                            </tr>
+                            <!-- image -->
+                            <tr>
+                              <td>
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" class="res-full">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td><a href="https://linktr.ee/myviewwellness" style="text-decoration: none" target="_blank"><img src="https://myview-wellness-program.netlify.app//img/qr-code.png" style="
+                                                    max-width: 150px;
+                                                    width: 100%;
+                                                    display: block;
+                                                    line-height: 0px;
+                                                    font-size: 0px;
+                                                    border: 0px;
+                                                    border-radius: 5px;
+                                                  " width="150" /> </a></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            <!-- image end -->
+                            <tr>
+                              <td height="20" style="font-size: 0px"> </td>
+                            </tr>
+                            <tr>
+                              <td height="37" style="font-size: 0px"> </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Footer -->
+            <table
+              align="center"
+              bgcolor="#ffffff"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="full"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <table
+                      align="center"
+                      bgcolor="#ffffff"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      class="margin-full"
+                      style="border-radius: 0 0 6px 6px"
+                      width="690"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table
+                              align="center"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              class="margin-pad"
+                              width="600"
+                            >
+                              <!-- dash -->
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table
+                                      align="center"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      class="res-full"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <table
+                                              align="center"
+                                              bgcolor="#aeafb0"
+                                              border="0"
+                                              cellpadding="0"
+                                              cellspacing="0"
+                                              style="
+                                                border-radius: 10px;
+                                                opacity: 0.2;
+                                              "
+                                            >
+                                              <tbody>
+                                                <tr>
+                                                  <td
+                                                    height="1"
+                                                    style="font-size: 0px"
+                                                    width="600"
+                                                  >
+                                                     
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <!-- dash end -->
+                                <tr>
+                                  <td height="23" style="font-size: 0px"> </td>
+                                </tr>
+                                <!-- paragraph -->
+                                <tr>
+                                  <td
+                                    class="res-center"
+                                    style="
+                                      text-align: center;
+                                      color: #12abe3;
+                                      font-family: 'Poppins', sans-serif;
+                                      font-size: 14px;
+                                      font-weight: 300;
+                                      letter-spacing: 0.4px;
+                                      line-height: 23px;
+                                      word-break: break-word;
+                                    "
+                                  >
+                                    © 2023 MyVIEW Wellness. All rights reserved.
+                                    <strong
+                                      style="color: #ed323f; font-weight: 300"
+                                      ><a href="[UNSUBSCRIBE_URL]"
+                                        >Unsubscribe.</a
+                                      >
+                                    </strong>
+                                  </td>
+                                </tr>
+                                <!-- paragraph end -->
+                                <tr>
+                                  <td height="23" style="font-size: 0px"> </td>
+                                </tr>
+                                <!-- paragraph -->
+                                <tr>
+                                  <td
+                                    class="res-center"
+                                    style="
+                                      text-align: center;
+                                      color: #6b7280;
+                                      font-family: 'Poppins', sans-serif;
+                                      font-size: 12px;
+                                      font-weight: 300;
+                                      letter-spacing: 0.4px;
+                                      line-height: 23px;
+                                      word-break: break-word;
+                                    "
+                                  >
+                                    You are receiving this email because of your
+                                    association with PACE Cardiology. MyVIEW
+                                    programing can be reimbursed as a health and
+                                    wellness service under certain private
+                                    insurance plans.
+                                  </td>
+                                </tr>
+                                <!-- paragraph end -->
+                                <tr>
+                                  <td height="50" style="font-size: 0px"> </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- End -->
+  </body>
 </html>
